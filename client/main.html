@@ -1,0 +1,162 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KevinJosey.com</title>
+
+</head>
+
+<body>
+  {{> MainNav}} 
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>  
+
+</body> 
+
+<template name="MainNav"> 
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand js-scroll-trigger" href="/">Home</a>
+    <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarColor01" 
+            aria-controls="navbarColor01"    
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="about">About Me
+            <span class="sr-only">(Something)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="contact">Contact Me</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="resume">Resume</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</template>
+
+<template name="Home"> 
+
+  <section>
+    <div class="badge-header">
+      <h1 class="display-4" align="center">Welcome to My Website </h1>
+        <p class="lead" align="center">My name is Kevin Josey and I
+          want to thank you for taking the time to learn more about 
+          me.</p>
+        <!-- <hr class="my-4"> -->
+        <p align="center">If you're here for a quick visit you can 
+          check out my resume <a href="resume"> here </a>. Otherwise you can download my resume <a href="resume.pdf"> here</a> 
+        </p>.
+        <p align="center"> If you want to learn more about me then you
+          can go <a href="about"> here </a>
+        </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="badge-primary">
+      <h2 class="display-3" align="center"> Contact Me </h2>
+      <p class="lead" align="center"> 
+        The best way to contact me is through my email: 
+          KevinJosey13@gmail.com <br>
+       Call or Text Me: (714)-876-7078 <br>  
+        My github username is: TheJosey  
+      </p>   
+    </div>
+  </section>
+
+
+</template>
+
+<template name="about">
+  
+  <!-- Picture of yourself? -->
+
+  <section>
+    <div class="badge-primary">
+      <h1 class="display-3" align="center">My Name is Kevin Josey</h1>
+        <p class="lead"> I graduated High School in 2014 
+          from Rancho Alamitos before I got accepted into Humboldt State University. After four years of hard work I graduated with my Bachelors in Computer Science in May of 2018. From there I took some time off to relax a bit and create this website to better advertise myself, but now I’m ready to get to work.  
+        </p>  
+    </div>
+  </section>
+
+  <section>
+    <div class="jumbotron">
+      <h3 class="display-3" align="center">Biggest Projects</h3>
+        <p> My two biggest projects are based in 
+          <a href="https://www.meteor.com"> Meteor </a> which uses 
+          node.js to create websites. These websites also use free Bootstrap templates at <a href="https://www.bootswatch.com">Bootswatch</a>. This website is the first of these projects and you can see it's source code on Github <a href="THE GITHUB LINK HERE"> here</a>. The second project relies more on Meteor and was a school project. We were tasked with creating a piece of working software and my group decided to make a simple matchmaking service to find others to play videogames with. We used <a href="https://www.mongodb.com"> MongoDB</a> for our database. The site itself is currently not up but you can view the source for that project <a href="THE GITHUB LINK HERE"> here</a>. My prefered text editor is <a href="https://www.sublimetext.com/"> Sublime Text</a>, but of course I'm willing to make a change.
+        </p>  
+    </div>
+  </section>
+
+  <section>
+    <div class="alert">
+      <h3 class="display-4" align="center">Hobbies and Interests</h3>
+      
+        <p> When it comes to hiring, it's important to know if your 
+          new employee will mesh with the workplace, so I figured I'd talk about myself personally on things not coding related. I'm a big Angels and Lakers fan, therefore I participate with several fantasy sport leagues. Otherwise I like to travel, go to the gym, and play videogames in my spare time. 
+        </p>
+    </div>
+  </section>
+
+</template>
+
+<template name="resume">
+  <section>
+    <div class="grad_photo">
+        <img src="images/Graduation_Me.jpg" alt="Picture of myself 
+        before graduation" style="float: right;" hspace="40"
+        vspace="40" height="350" width="275">
+    </div>
+    <div class="alert">
+      <h3> Resume </h3>     
+      <p> Download it <a href="resume.pdf">here</a> or read it below. </p>
+    </div>
+  </section>
+  <section>
+    <div class="jumbotron">
+      <p>
+        <h5> Kevin Josey </h5> <br>
+        10122 Roselee Dr. Garden Grove, CA 92840 | (714)-876-7078 | KevinJosey13@gmail.com | KevinJosey.com <br>
+        <h6> Professional Summary </h6> 
+        Aspiring programmer with great communication skills ready to make an impact on the workplace. Passionate about creating useful and entertaining software for others and helping others with their technology based problems. Now that I have graduated, I am ready to narrow down what field of work I wish to enter and ready for new experiences. Motivated and enthusiastic to enter the workplace. 
+        <h6> Education </h6>
+        BACHELOR OF SCIENCE | 2018 | HUMBOLDT STATE UNIVERSITY
+        <ul>
+          <li> Major: Computer Science </li>
+          <li> Related coursework: software engineering, telecommunications and networking, web apps using databases, database design, computer security, python programming, operating systems, architecture </li>
+          <li> Graduated in May of 2018 </li>
+          <li> 3.41 overall GPA, 3.52 Major GPA </li>
+        </ul>
+        <h6> Skills </h6>
+        CODING
+        <ul>
+          <li> Avid coder that has skills and experience in: C++, Python, Oracle SQL, JavaScript, Meteor, node.js MongoDB, HTML. Most recently I was in a semester long group project in which we had to create a piece of software. We created a simple version of a matchmaking system using Meteor and MongoDB to make website along with some HTML and JavaScript. </li>
+        </ul>
+        COMMUNICATION
+        <ul>
+          <li> In any group project communication is the most important factor in delivering a polished final product. I always make sure to keep everyone talking with one another so that all of the pieces are brought together in a professional manner. I will bring this attitude to the workplace because no matter where you work, constant communication will create a better product. </li>
+        </ul>
+        MISCELLANEOUS
+        <ul>
+          <li> Other skills include proficiency with: multitasking, time management, work distribution, self-initiation </li>
+        </ul> 
+      </p>
+    </div>  
+  </section>
+
+</template>
