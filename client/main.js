@@ -20,4 +20,8 @@ Router.route('resume', function () {
   this.render('resume');
 });
 
-
+// Template.fileList.helpers({
+//   files: function () {
+//     return Files.find();
+//   }
+// });

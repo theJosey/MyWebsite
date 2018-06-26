@@ -35,9 +35,6 @@
           <a class="nav-link" href="about">About Me
             <span class="sr-only">(Something)</span></a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="contact">Contact Me</a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="resume">Resume</a>
         </li>
@@ -51,16 +48,16 @@
 
   <section>
     <div class="badge-header">
-      <h1 class="display-4" align="center">Welcome to My Website </h1>
+      <h1 class="display-4" align="center">Welcome to My Website</h1>
         <p class="lead" align="center">My name is Kevin Josey and I
           want to thank you for taking the time to learn more about 
           me.</p>
         <!-- <hr class="my-4"> -->
         <p align="center">If you're here for a quick visit you can 
-          check out my resume <a href="resume"> here </a>. Otherwise you can download my resume <a href="resume.pdf"> here</a> 
-        </p>.
-        <p align="center"> If you want to learn more about me then you
-          can go <a href="about"> here </a>
+          check out my resume <a href="resume"> here</a>. Otherwise you can download my resume <a href="/public/pdf/Resume18.pdf" download target="_blank">here</a>. 
+        </p> <!--
+        <a href="/public/pdf/Resume18.pdf" download target="_blank">Download</a>-->
+        <p align="center"> If you want to learn more about me then you can go <a href="about"> here</a>.
         </p>
     </div>
   </section>
@@ -72,17 +69,25 @@
         The best way to contact me is through my email: 
           KevinJosey13@gmail.com <br>
        Call or Text Me: (714)-876-7078 <br>  
-        My github username is: TheJosey  
+        My github username is: theJosey  
       </p>   
     </div>
   </section>
 
 
 </template>
-
+<!--
+<template name="fileList">
+  <div class="fileList">
+    {{#each files}}
+      <div class="file">
+        <strong>{{this.name}}</strong> <a href="{{this.url download=true}}" class="btn btn-primary" target="_parent">Download</a>
+      </div>
+    {{/each}}
+  </div>
+</template>
+-->
 <template name="about">
-  
-  <!-- Picture of yourself? -->
 
   <section>
     <div class="badge-primary">
@@ -124,7 +129,7 @@
     </div>
     <div class="alert">
       <h3> Resume </h3>     
-      <p> Download it <a href="resume.pdf">here</a> or read it below. </p>
+       <!-- <p> Download it <a href="/public/pdf/resume18.pdf" download="Kevin Josey Resume" target="_blank"> here</a> or read it below. </p> -->
     </div>
   </section>
   <section>
