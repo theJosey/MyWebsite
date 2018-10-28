@@ -61,6 +61,8 @@ mongo-id@1.0.7
 npm-mongo@3.0.7
 observe-sequence@1.0.16
 ordered-dict@1.1.0
+ostrio:cookies@2.2.5
+ostrio:files@1.9.11
 promise@0.11.1
 random@1.1.0
 reactive-dict@1.2.0

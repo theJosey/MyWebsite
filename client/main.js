@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import './main.html';
 
 $(document).ready(function() {
 
@@ -16,12 +17,11 @@ Router.route('about', function () {
   this.render('about');
 });
 
+Router.route('Projects', function () {
+  this.render('Projects');
+});
+
 Router.route('resume', function () {
   this.render('resume');
 });
 
-// Template.fileList.helpers({
-//   files: function () {
-//     return Files.find();
-//   }
-// });

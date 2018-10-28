@@ -38,6 +38,9 @@
         <li class="nav-item">
           <a class="nav-link" href="resume">Resume</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects">Projects</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -45,7 +48,6 @@
 </template>
 
 <template name="Home"> 
-
   <section>
     <div class="badge-header">
       <h1 class="display-4" align="center">Welcome to My Website</h1>
@@ -54,9 +56,12 @@
           me.</p>
         <!-- <hr class="my-4"> -->
         <p align="center">If you're here for a quick visit you can 
-          check out my resume <a href="resume"> here</a>. Otherwise you can download my resume <a href="/public/pdf/Resume18.pdf" download target="_blank">here</a>. 
-        </p> <!--
-        <a href="/public/pdf/Resume18.pdf" download target="_blank">Download</a>-->
+          check out my resume <a href="resume"> here</a>. 
+          <!-- Otherwise you can download my resume 
+          <a href="/public/pdf/Resume18.pdf?download=true" 
+          download target="_parent">here</a>. -->
+        </p>
+        <p align="center"> Check out my Projects <a href="Projects"> here</a>. </p>
         <p align="center"> If you want to learn more about me then you can go <a href="about"> here</a>.
         </p>
     </div>
@@ -69,28 +74,18 @@
         The best way to contact me is through my email: 
           KevinJosey13@gmail.com <br>
        Call or Text Me: (714)-876-7078 <br>  
-        My github username is: theJosey  
+        Check Out My GitHub Account: <a href="https://github.com/theJosey" style="color:rgb(255,255,255)">here</a>. <br>
+        Check Out My Linkedin Profile: <a href="https://www.linkedin.com/in/kevin-josey-732198150/" 
+        style="color:rgb(255,255,255)">here</a>.
       </p>   
     </div>
   </section>
-
-
 </template>
-<!--
-<template name="fileList">
-  <div class="fileList">
-    {{#each files}}
-      <div class="file">
-        <strong>{{this.name}}</strong> <a href="{{this.url download=true}}" class="btn btn-primary" target="_parent">Download</a>
-      </div>
-    {{/each}}
-  </div>
-</template>
--->
+
 <template name="about">
 
   <section>
-    <div class="badge-primary">
+    <div class="alert">
       <h1 class="display-3" align="center">My Name is Kevin Josey</h1>
         <p class="lead"> I graduated High School in 2014 
           from Rancho Alamitos before I got accepted into Humboldt State University. After four years of hard work I graduated with my Bachelors in Computer Science in May of 2018. From there I took some time off to relax a bit and create this website to better advertise myself, but now I’m ready to get to work.  
@@ -99,22 +94,25 @@
   </section>
 
   <section>
-    <div class="jumbotron">
-      <h3 class="display-3" align="center">Biggest Projects</h3>
-        <p> My two biggest projects are based in 
-          <a href="https://www.meteor.com"> Meteor </a> which uses 
-          node.js to create websites. These websites also use free Bootstrap templates at <a href="https://www.bootswatch.com">Bootswatch</a>. This website is the first of these projects and you can see it's source code on Github <a href="THE GITHUB LINK HERE"> here</a>. The second project relies more on Meteor and was a school project. We were tasked with creating a piece of working software and my group decided to make a simple matchmaking service to find others to play videogames with. We used <a href="https://www.mongodb.com"> MongoDB</a> for our database. The site itself is currently not up but you can view the source for that project <a href="THE GITHUB LINK HERE"> here</a>. My prefered text editor is <a href="https://www.sublimetext.com/"> Sublime Text</a>, but of course I'm willing to make a change.
-        </p>  
-    </div>
-  </section>
-
-  <section>
-    <div class="alert">
+    <div class="badge-primary">
       <h3 class="display-4" align="center">Hobbies and Interests</h3>
       
         <p> When it comes to hiring, it's important to know if your 
           new employee will mesh with the workplace, so I figured I'd talk about myself personally on things not coding related. I'm a big Angels and Lakers fan, therefore I participate with several fantasy sport leagues. Otherwise I like to travel, go to the gym, and play videogames in my spare time. 
         </p>
+    </div>
+  </section>
+
+</template>
+
+<template name="Projects"> 
+  
+<section>
+    <div class="badge-header">
+      <h3 class="display-3" align="center">Projects</h3>
+        <p align="center"> My largest project is this exact website 
+          based in <a href="https://www.meteor.com"> Meteor</a> which uses node.js to create websites. This website also use free Bootstrap template at <a href="https://www.bootswatch.com">Bootswatch</a>. You can find the source code on Github <a href="https://github.com/theJosey/MyWebsite"> here</a>. My prefered text editors are <a href="https://www.sublimetext.com/"> Sublime Text</a> and  <a href="https://visualstudio.microsoft.com/"> Visual Studio</a>.
+        </p>  
     </div>
   </section>
 
