@@ -1,0 +1,49 @@
+Monday: Finish Updating Resume. 
+
+Done 
+
+Tuesday: Begin plans for IR like system to take over Projects tab, look up unemployment stuff, add resume to website
+
+adding resume to website took longer than expected, but project is now updated to latest meteor and working, plus resume updated
+
+Wednesday: Continue Tuesday. 
+
+Lots of plans are set, for main page and issues page. creating web pages with a function will need to be investigated
+Look up unemployment stuff tomorrow 
+
+Thursday: Finish tuesday tasks, potentially start 
+We have started, dropdown button created, now we need to figure out the database,
+use dropdown entries to create a page for an issue 
+
+Friday: Definietly start. We started thursday so i'm gonna let today slide. plus got mother's day stuff taken care of
+On monday make new schedule for the week 
+
+
+
+SET DEPLOY_HOSTNAME=galaxy.meteor.com
+
+meteor deploy kevinjosey.meteorapp.com --settings package.json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

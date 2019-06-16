@@ -39,8 +39,14 @@
           <a class="nav-link" href="resume">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Projects">Projects</a>
+          <a class="nav-link" href="issues">Project Issues</a>
         </li>
+        <li class="signin"> 
+          {{> loginButtons}}
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="Projects">Projects</a> 
+        </li>-->
       </ul>
     </div>
   </nav>
@@ -61,7 +67,7 @@
           <a href="/public/pdf/Resume18.pdf?download=true" 
           download target="_parent">here</a>. -->
         </p>
-        <p align="center"> Check out my Projects <a href="Projects"> here</a>. </p>
+        <!-- <p align="center"> Check out my Projects <a href="Projects"> here</a>. </p> -->
         <p align="center"> If you want to learn more about me then you can go <a href="about"> here</a>.
         </p>
     </div>
@@ -105,7 +111,8 @@
 
 </template>
 
-<template name="Projects"> 
+<!--<template name="Projects"> Removed because there is only one... not great, put back if monopoloy has a working version?
+  or at least sufficient code...
   
 <section>
     <div class="badge-header">
@@ -116,7 +123,7 @@
     </div>
   </section>
 
-</template>
+</template> -->
 
 <template name="resume">
   <section>
@@ -135,17 +142,16 @@
       <p>
         <h5> Kevin Josey </h5> <br>
         10122 Roselee Dr. Garden Grove, CA 92840 | (714)-876-7078 | KevinJosey13@gmail.com | KevinJosey.com <br>
-        <h6> Professional Summary </h6> 
-        Aspiring programmer with great communication skills ready to make an impact on the workplace. Passionate about creating useful and entertaining software. Now that I have graduated I am ready to try new experiences and get to work <br> <br>
+        Aspiring programmer with great communication skills ready to make an impact on the workplace. You can view projects that I’ve worked on with my website above.  <br> <br>
         <h6> Work Experience </h6>
-        Factory Motor Parts <br>
-        October 11th, 2018 - Present <br>
+        SOFTWARE ENGINEER INTERN <br>
+        ETAP <br>
+        March 11th, 2019 – May 3rd, 2019 <br>
         Tasks/Responsibilities 
         <ul>
-          <li> Deliver up to thousands of dollars’ worth of product in a safe and professional manner. </li>
-          <li> Retrieve auto parts from warehouse and prepare them for safe transit. </li>
-          <li> Drive to multiple locations around the Southern California area so that parts arrive in a timely manner. 
-          </li>
+          <li> Code in Visual Studio with both C++ and C#.  </li>
+          <li> Complete tasks assigned to me via Jira </li>
+          <li> Primarily worked on bug fixes in ETAP’s codebase. </li>          
         </ul>  
         <h6> Education </h6>
         BACHELOR OF SCIENCE | 2018 | HUMBOLDT STATE UNIVERSITY
@@ -158,11 +164,7 @@
         <h6> Skills </h6>
         LAUNGUAGES
         <ul>
-          <li> Avid coder that has skills and experience in: C++ (Proficient), Python (Prior Experience), Oracle SQL (Prior Experience), JavaScript (Proficient), Meteor (Prior Experience) </li>
-        </ul>
-        PROJECT
-        <ul>
-          <li> This Website! Made with Meteor and Bootstrap </li>
+          <li> Avid coder that has skills and experience in: C++ (Proficient), C# (Proficient), Oracle SQL (Prior Experience), JavaScript (Proficient), Meteor (Prior Experience) </li>
         </ul>
         COMMUNICATION
         <ul>
@@ -172,8 +174,118 @@
         <ul>
           <li> Other skills include proficiency with: multitasking, time management, work distribution, self-initiation </li>
         </ul> 
+        <h6> OTHER </h6>
+        DEVELOPER SOFTWARE I’VE WORKED WITH
+        <ul> AccuRev, GitHub, Sublime, Visual Studio </ul>
       </p>
     </div>  
   </section>
 
 </template>
+
+<template name="issues">
+  <section>
+    <div class="badge-header">
+      <h1 class="display-4" align="center">Project Issues</h1>
+    </div>
+  </section>
+
+
+  <!-- lots of css stuff needed -->
+  <div class="CreateNewIssues">
+    <form class="new-Issue"> 
+      <input type="text" name="title" placeholder="Issue Title">
+      <input type="text" name="project" placeholder="Issue Project">
+      <input type="text" name="details" placeholder="Issue Details">
+      {{#if currentUser}}
+        <input type="submit" value="Submit"> 
+      {{else}}
+        <br> User must be logged in to create new Issues 
+        <br> Please contact me if you wish to login and interact with this Project Issues page
+      {{/if}}  
+    </form>
+  </div>
+
+  <div class="SortIssues">
+    <label class="sort-All">
+      <input type="checkbox" checked="{{sortAll}}"> View All Issues Including Completed Issues
+    </label> <br>
+      
+    <label class="sort-Date">
+      <input type="checkbox" checked="{{sortDate}}"> Sort By Date
+    </label> <br>
+
+    <label class="sort-Project"> <!-- {{sortProject}} -->   
+      <div class="form-group">
+      <form>
+      <label for="exampleSelect1"></label>
+      <select class="sort-Project" id="sortProject">
+        <option>View All Projects</option>
+        <option>Website</option>
+        <option>Monopoly</option>
+      </select>
+    </form>
+    </div> 
+    </label>
+  </div> <br>
+
+  <div>
+    <ul class="TheListofIssues">
+      {{#each issueslistDefault}}
+        <p class="ListofIssuesFont"> {{> IssueList}} </p> <hr class="EndofIssue">
+      {{/each}} 
+    </ul>
+  </div>
+   
+</template>
+
+<template name="IssueList">
+  <li class="ListTheList">
+    <p class="IssuesTitles"> Issue Title: </p> {{title}} 
+    {{#if currentUser}}
+      <button class="delete">Delete Issue</button>  
+      {{else}}
+      <button class="status">User must be logged in to delete Issues </button>
+    {{/if}} 
+  </li> 
+  <li class="ListTheList">
+    <p class="IssuesTitles"> Project: </p> {{project}} 
+    {{#if currentUser}}
+      <p class="hours"> Hours Logged: {{hours}} </p>
+      <button class="subtractHours"> Subtract Hours </button>
+      <button class="addHours"> Add Hours </button>
+      {{else}}
+        <p class="hours"> Hours Logged: {{hours}} </p>   
+    {{/if}} 
+  </li>
+  <li class="ListTheList">
+    <p class="IssuesTitles"> Details: </p> {{details}}    
+  </li>
+  <li class="ListTheList">
+    <p class="IssuesTitles"> Date Created: </p> {{date}}  
+      <p class="status"> Status: {{status}} </p>
+    {{#if currentUser}}
+      <button class="complete"> Complete Issue </button>
+    {{/if}}
+  </li>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

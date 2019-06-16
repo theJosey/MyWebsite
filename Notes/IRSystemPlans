@@ -1,0 +1,112 @@
+What should we call it? 
+Project Issues
+
+What does it need to do?
+
+Have a log in system, not a sign up system
+Do not have a create account system, i think having myself hardcode two accouts in is the best way to go
+One account for me, one for "guests", good for interviews. 
+For now focus on mine 
+
+while logged in, you have the ability to:
+view issues 
+Create an issue
+edit existing issues
+log work into existing issues
+"Complete" Issues
+log out
+
+while not logged in you can:
+view issues 
+log in 
+
+Log in: 
+username and password
+no option to create an account, don't want others to make changes to site
+would be cool to add it to nav bar, gotta figure if that's feasable, plus i'd like it in the top right. 
+
+log out:
+just log out
+
+When Viewing Issues:
+while logged in or not logged in:
+	ideally have a sort mechanic that can:
+	sort by project,
+	sort by Not started, in progress, complete
+	and of course view all 
+while logged in only:
+	Edit Issue button, See When you edit an existing issue
+	log hours button:
+		Log hours can be simple, enter a number and it will add it to number total, accept decimals too, and negative numbers to 
+		take away hours if excess hours are entered by accident 
+	Complete issues button: i think simple toggle to show it's complete is good enough 
+
+When you create an issue: ------------------------------ CREATE AN ISSUE -------------------------------------
+have numbering system the will automatically give a sub name to each issue: Issue 1, Issue 2, etc..
+Can choose from a list of existing projects or create a new project
+Title the issue, concise sentence on the problem
+Details section, will elaborate on the problem. how to re-create it etc
+In the future we can estimate how long we think a project will last, but for now i don't think we need it.
+
+When you edit an existing issue:
+Can change all fields as described in When you create an issue
+
+Let's decide what we want on the main page: ---------------------MAIN PAGE --------------------------------------
+
+Log in/Log out: lets say top right ideally in the nav bar
+
+A create issue button. Let's have this be in the top right, under the nav bar 
+
+A list of all issues and links to said issues
+this is were the sort mechanic would be 
+This will take up most of the page 
+
+So lets recap all the things we want on any given issue page: ----------------------------ANY ISSUES PAGE --------------
+
+Log in/Log out: lets say top right
+
+Menu: Pretty much the top of the site, lets have the menu. this includes the three already there: Home, About Me, Resume,
+plus adding Main view page that shows all issues. aka Issues 
+
+Project: the name of the project that it's related to ie Monopoly, to the left of the Title
+
+Title: title of Issue and Issue #, have it top left, below the Menu 
+
+Status: aka Not Yet Started, Started, Completed : have it be on the same level as Title, on the right side. 
+
+Hours logged: have it be under where Status would go
+
+If we can, it'd be nice to have Edit Issue and Complete Issue be close to each other, in the middle of Status and Title
+if not put it under Title. Note: when Complete issue is selected, it should be replaced with a Re-Open Issue button that untoggles 
+the Complete Status
+
+Description: the description can take up most of the page
+
+The top might feel a little crowded, but i don't think it'll be too bad. it's all important info 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+May 13 2019 - May 17 2019
+
+Monday: Creating a function that creates new webpages for issues is the priority, site falls a part without it
+who knows how long it'll take. gonna go for it this week and see progress or not. 
+
+if it doesn't look possible by friday then we just move to Monopoly, but we can do it. 
+
+Just write down what you did each day, this is the task for the week 
+
+May be much more feasable to just make a big table, each row being one issue, that can track what needs to be done....
+still look into webpages because that's cooler, but idk if javascript/meteor/mongo can do this 
+
+so new idea is that the function would have to write to both main.html and main.js, and basically add needed info to both of those
+pages. if we use HARD VALUES then it should be fine security wise..
+and duh, this requires using the database....
+
+idea: create a meteor collection, save data from buttons to said collection, write that data to files on save??
+Meteor for Everyone on youtube.
+db.collectionName.insert({ title: "Hello World", createdAt: new Date() }); will add data to said collection
+could this be used? you'd think there would be a simpler way...
+
+if we can't find any hint towards dynacmically creating a template/router. then we move to big table like thursday. 
+
+
+Tuesday:
+
+alright i know it's only day two but i'm leaning towards using the collections system from Meteor for everyone to create issues
+since i'm having little luck for creating new webpages. collections way seems easier, just need to style it like a table 
+
+might have to start video series over to make sure we do it in a similar way 
+
+this is working really well, should be done by friday
+
+great day, can add new issues, have checkmarks save with sessions, can also delete issues. 
+tomorrow keep watching session series. late into #6 11:40. this has info on using checked values with css classes. 
+
+Wednesday: 
+
+added an account system, you can only add issues if signed in, need to see about disabiling the create account function.
+learned about adding meteor packages. found good examples of tables and forms in bootswatch for superhero. 
+that can be for tomorrow. also move signin to the right side of nav bar, and lower it a bit it looks higher than the other stuff. 
+
+Thursday: basically took day off, we are ahead of schedule because creating issues is basically complete. 
+
+Friday: looks like tables won't work, it'll basically stuff all data types in one row. aka all titles in a 1x1 box, and so on
+gonna need to just use css for this one 
+
+it looks better, each type of data gets it's own line. still needs improvment. make a new plan on monday. 
+once the list itself looks good, we'll work on making the create new issues look better, 
+
+
+
+SET DEPLOY_HOSTNAME=galaxy.meteor.com
+
+meteor deploy kevinjosey.meteorapp.com --settings package.json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

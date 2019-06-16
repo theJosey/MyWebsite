@@ -2,7 +2,7 @@
   "galaxy.meteor.com": { 
      "env": { 
        "ROOT_URL": "http://KevinJosey.meteorapp.com", 
-       "MONGO_URL": "mongodb://<dbuser>:<dbpassword>@ds018238.mlab.com:18238/mywebsite_mongodb" 
+       "MONGO_URL": "mongodb://admin:Enterthedatabase15@ds018238.mlab.com:18238/mywebsite_mongodb"
      } 
    }
 }

@@ -1,0 +1,64 @@
+May 20 - May 24 2019
+
+Goal is to finish website Issue implementation by Wednesday.
+Then thursday start on planning for Monopoly. 
+
+Monday: 
+
+Can now add and subtract hours from a issue
+Status bar will signify if Issue has been started, not yet started depending on the hours logged
+Status will show as Complete if checkbox is marked, when marked complete, can still log hours without changing status
+Should probably make the checkbox into a Mark Complete Button. do that tomorrow
+
+Tuesday:
+
+Complete Issue is now a button
+Have changed css so Buttons are different colors
+Buttons have been moved to appropriate lines, right side of screen is done
+
+Wednesday: 
+
+Goal today is to make left side look nicer, maybe improve 
+Didn't do much, just bolded the bits of the left side. 
+
+
+Thursday: will be at Disney, so day off
+
+Friday: 
+
+Let's spend today planning for next week because I was tired today.....
+
+SORT feature, at least need to be able to hide "Complete Issues", Ideally also sort by data created and by PROJECT
+SORT menu inbetween the issue creatation and issue list would be best, look up examples online
+Also need to make create issue look better, maybe with dropdown feature for PROJECT tab. 
+
+Focus on sort first. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

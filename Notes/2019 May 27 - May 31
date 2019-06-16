@@ -1,0 +1,71 @@
+2019 May 27 - May 31
+
+SORT feature, at least need to be able to hide "Complete Issues", Ideally also sort by data created and by PROJECT
+SORT menu inbetween the issue creatation and issue list would be best, look up examples online
+Also need to make create issue look better, maybe with dropdown feature for PROJECT tab. 
+
+Focus on sort first. 
+
+Monday:
+
+sort menu should have dropdowns to determine what to see, with submit button at the end
+there is a sort feature for mongo collections! because of  course there is
+
+assign click properties to all checks, have multiple if statements based off said checks, assign var
+with the sort function needed. have it somehow assigned to IssueList??
+
+so we found out about selectors and they work for the new default view, just need to figure out how to 
+modify these selectors
+
+Tuesday:
+
+can now view all issues with button check
+Sort by date and by project need to be dropboxes that work together
+work on dropboxes tomorrow. 
+
+
+Wednesday: busy today, talked to dad.
+
+Thursday:
+
+lots of sort work done!!!!!!!
+Just need to add in a monopoly sorter! Otherwise it works great!!
+
+Friday: 
+
+sick from friday to Wednesday
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
