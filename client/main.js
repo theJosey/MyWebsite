@@ -14,17 +14,9 @@ Router.route('/', function () {
   this.render('Home');
 });
 
-Router.route('about', function () {
-  this.render('about');
-});
-
 //Router.route('Projects', function () { // removed for now 
 //  this.render('Projects');
 //});
-
-Router.route('resume', function () {
-  this.render('resume');
-});
 
 Router.route('issues', function () {
   this.render('issues');

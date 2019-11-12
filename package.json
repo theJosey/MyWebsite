@@ -7,8 +7,10 @@
   "dependencies": {
     "@babel/runtime": "^7.4.4",
     "bcrypt": "^1.0.3",
+    "browserslist": "^4.7.2",
+    "caniuse-lite": "^1.0.30001008",
     "core-js": "^2.5.1",
     "meteor-node-stubs": "^0.3.2",
-    "mongodb": "^3.0.10"
+    "mongodb": "^3.3.3"
   }
 }

@@ -30,14 +30,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="about">About Me
-            <span class="sr-only">(Something)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="resume">Resume</a>
-        </li>
+      <ul class="navbar-nav mr-auto">       
         <li class="nav-item">
           <a class="nav-link" href="issues">Project Issues</a>
         </li>
@@ -54,62 +47,61 @@
 </template>
 
 <template name="Home"> 
-  <section>
+  <section class="Welcome">
     <div class="badge-header">
       <h1 class="display-4" align="center">Welcome to My Website</h1>
-        <p class="lead" align="center">My name is Kevin Josey and I
-          want to thank you for taking the time to learn more about 
-          me.</p>
+        <p class="lead" align="center">
+          Thank you for taking the time to learn more about me. <br> 
+          You can check out my resume here: 
+          <a href="https://drive.google.com/open?id=1FnbAqPUhnL346mChUdOYjVR-3AHVgPC9">here(Word Doc)</a> or <a href="https://drive.google.com/open?id=1u03zPcvuj5je8lpLkol95NM6rD_qcnVW"> here(PDF)</a>
+        </p>
         <!-- <hr class="my-4"> -->
-        <p align="center">If you're here for a quick visit you can 
-          check out my resume <a href="resume"> here</a>. 
-          <!-- Otherwise you can download my resume 
-          <a href="/public/pdf/Resume18.pdf?download=true" 
-          download target="_parent">here</a>. -->
-        </p>
+        
+        
         <!-- <p align="center"> Check out my Projects <a href="Projects"> here</a>. </p> -->
-        <p align="center"> If you want to learn more about me then you can go <a href="about"> here</a>.
-        </p>
     </div>
   </section>
 
+  <h1 class="display-3" align="center" style="padding-bottom: 0;">My Name is Kevin Josey</h1>
+
+  <h3 style="text-align: center;">About Me</h3> 
+
   <section>
+    <div class="AboutMe">  
+     <div class="row">
+      <div class="column">
+        <h2>Professional Summary</h2>
+        <p style="text-align: left;">I graduated High School in 2014 from Rancho Alamitos before I got accepted into Humboldt State University. After four years of hard work I graduated with my Bachelors in Computer Science in May of 2018. From there I took some time off to relax with a gap year. In March of 2019 I got an internship at ETAP as a Software Engineer Intern and worked there until May when I was laid off. Now I'm looking for new work while I keep busy with this website and new projects! </p>
+      </div>
+      <div class="column">
+        <img src="Images/FormalPic.jpg" class="center_photo" alt="Picture of myself" 
+             hspace="5%" vspace="5%">
+      </div>
+      <div class="column">
+        <h2>Hobbies and Interests</h2>
+        <p style="text-align: left;">I love both baseball and basketball and I"m a huge Angel and Laker fan. The Lakers are finally competitive again! The Angels need pitching this offseason(as usual), but I think this is going to be a great offseason for us. I'm in 3 fantasy baseball leagues and 1 fantasy basketball league. This past year I won 2 of the 3 baseball leagues! I also love to workout and play videogames in my spare time. I just beat Red Dead Redemption 2 and I need to find something to fill this hole in my life.</p>
+      </div>
+     </div>     
+    </div>
+  </section>
+
+  
+  <footer class="ContactMe">
     <div class="badge-primary">
       <h2 class="display-3" align="center"> Contact Me </h2>
       <p class="lead" align="center"> 
-        The best way to contact me is through my email: 
-          KevinJosey13@gmail.com <br>
-       Call or Text Me: (714)-876-7078 <br>  
-        Check Out My GitHub Account: <a href="https://github.com/theJosey" style="color:rgb(255,255,255)">here</a>. <br>
+        Email: KevinJosey13@gmail.com <br>
+        Call or Text Me: (714)-876-7078 <br>  
+        Check Out My Projects on GitHub Account: <a href="https://github.com/theJosey" style="color:rgb(255,255,255)">here</a>. <br>
         Check Out My Linkedin Profile: <a href="https://www.linkedin.com/in/kevin-josey-732198150/" 
         style="color:rgb(255,255,255)">here</a>.
       </p>   
     </div>
-  </section>
+  </footer>
+  
 </template>
 
-<template name="about">
 
-  <section>
-    <div class="alert">
-      <h1 class="display-3" align="center">My Name is Kevin Josey</h1>
-        <p class="lead"> I graduated High School in 2014 
-          from Rancho Alamitos before I got accepted into Humboldt State University. After four years of hard work I graduated with my Bachelors in Computer Science in May of 2018. From there I took some time off to relax a bit and create this website to better advertise myself, but now I’m ready to get to work.  
-        </p>  
-    </div>
-  </section>
-
-  <section>
-    <div class="badge-primary">
-      <h3 class="display-4" align="center">Hobbies and Interests</h3>
-      
-        <p> When it comes to hiring, it's important to know if your 
-          new employee will mesh with the workplace, so I figured I'd talk about myself personally on things not coding related. I'm a big Angels and Lakers fan, therefore I participate with several fantasy sport leagues. Otherwise I like to travel, go to the gym, and play videogames in my spare time. 
-        </p>
-    </div>
-  </section>
-
-</template>
 
 <!--<template name="Projects"> Removed because there is only one... not great, put back if monopoloy has a working version?
   or at least sufficient code...
@@ -125,63 +117,6 @@
 
 </template> -->
 
-<template name="resume">
-  <section>
-    <div class="grad_photo">
-        <img src="images/Graduation_Me.jpg" alt="Picture of myself 
-        before graduation" style="float: right;" hspace="40"
-        vspace="40" height="350" width="275">
-    </div>
-    <div class="alert">
-      <h3> Resume </h3>     
-       <!-- <p> Download it <a href="/public/pdf/resume18.pdf" download="Kevin Josey Resume" target="_blank"> here</a> or read it below. </p> -->
-    </div>
-  </section>
-  <section>
-    <div class="jumbotron">
-      <p>
-        <h5> Kevin Josey </h5> <br>
-        10122 Roselee Dr. Garden Grove, CA 92840 | (714)-876-7078 | KevinJosey13@gmail.com | KevinJosey.com <br>
-        Aspiring programmer with great communication skills ready to make an impact on the workplace. You can view projects that I’ve worked on with my website above.  <br> <br>
-        <h6> Work Experience </h6>
-        SOFTWARE ENGINEER INTERN <br>
-        ETAP <br>
-        March 11th, 2019 – May 3rd, 2019 <br>
-        Tasks/Responsibilities 
-        <ul>
-          <li> Code in Visual Studio with both C++ and C#.  </li>
-          <li> Complete tasks assigned to me via Jira </li>
-          <li> Primarily worked on bug fixes in ETAP’s codebase. </li>          
-        </ul>  
-        <h6> Education </h6>
-        BACHELOR OF SCIENCE | 2018 | HUMBOLDT STATE UNIVERSITY
-        <ul>
-          <li> Major: Computer Science </li>
-          <li> Related coursework: software engineering, telecommunications and networking, web apps using databases, database design, computer security, python programming, operating systems, architecture </li>
-          <li> Graduated in May of 2018 </li>
-          <li> 3.41 overall GPA, 3.52 Major GPA </li>
-        </ul>
-        <h6> Skills </h6>
-        LAUNGUAGES
-        <ul>
-          <li> Avid coder that has skills and experience in: C++ (Proficient), C# (Proficient), Oracle SQL (Prior Experience), JavaScript (Proficient), Meteor (Prior Experience) </li>
-        </ul>
-        COMMUNICATION
-        <ul>
-          <li> In any group project communication is the most important factor in delivering a polished final product. I always make sure to keep everyone talking with one another so that all of the pieces are brought together in a professional manner. I will bring this attitude to the workplace because no matter where you work constant communication will create a better product. </li>
-        </ul>
-        MISCELLANEOUS
-        <ul>
-          <li> Other skills include proficiency with: multitasking, time management, work distribution, self-initiation </li>
-        </ul> 
-        <h6> OTHER </h6>
-        DEVELOPER SOFTWARE I’VE WORKED WITH
-        <ul> AccuRev, GitHub, Sublime, Visual Studio </ul>
-      </p>
-    </div>  
-  </section>
-
-</template>
 
 <template name="issues">
   <section>
@@ -190,8 +125,6 @@
     </div>
   </section>
 
-
-  <!-- lots of css stuff needed -->
   <div class="CreateNewIssues">
     <form class="new-Issue"> 
       <input type="text" name="title" placeholder="Issue Title">
@@ -222,7 +155,7 @@
       <select class="sort-Project" id="sortProject">
         <option>View All Projects</option>
         <option>Website</option>
-        <option>Monopoly</option>
+        <!--<option>Monopoly</option>-->
       </select>
     </form>
     </div> 
